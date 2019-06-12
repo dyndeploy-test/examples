@@ -1,6 +1,6 @@
 deployments:
   guestbook:
-    kubernetes_config: guestbook/redis-master-deployment.yaml, guestbook/redis-master-service.yaml
+    kubernetes_config: guestbook/frontend-deployment.yaml, guestbook/redis-master-deployment.yaml, guestbook/redis-master-service.yaml
     deployment_type: kubernetes
     kubernetes_default_image: rss-site
     kubernetes_port_mapping: redmine:3000
