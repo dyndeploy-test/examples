@@ -1,11 +1,11 @@
 deployments:
   guestbook:
-    kubernetes_config: guestbook/frontend-deployment.yaml, guestbook/redis-master-deployment.yaml, guestbook/redis-master-service.yaml, guestbook/frontend-service.yaml
+    kubernetes_manifest: guestbook/frontend-deployment.yaml, guestbook/redis-master-deployment.yaml, guestbook/redis-master-service.yaml, guestbook/frontend-service.yaml
     kubernetes_service: frontend
     deployment_type: kubernetes
     kubernetes_default_image: frontend
   cassandra:
-    kubernetes_config: cassandra/cassandra-service.yaml, cassandra/cassandra-statefulset.yaml
+    kubernetes_manifest: cassandra/cassandra-service.yaml, cassandra/cassandra-statefulset.yaml
     deployment_type: kubernetes
     kubernetes_default_image: cassandra
   mysql-wordpress-pd:
