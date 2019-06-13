@@ -8,7 +8,7 @@ deployments:
     kubernetes_manifest: cassandra/cassandra-service.yaml, cassandra/cassandra-statefulset.yaml
     deployment_type: kubernetes
     kubernetes_default_image: cassandra
-    wait_ready: 20
+    ready_wait: 20
   mysql-wordpress-pd:
     kubernetes_kustomization: mysql-wordpress-pd/
     deployment_type: kubernetes
