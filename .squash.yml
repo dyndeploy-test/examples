@@ -14,3 +14,4 @@ deployments:
     deployment_type: kubernetes
     kubernetes_service: wordpress
     kubernetes_default_image: wordpress
+
